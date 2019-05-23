@@ -88,3 +88,12 @@ body {
     margin-top: 7rem;
   }
 }
+
+/* ASTHETIC CSS
+-------------------------------------------------- */
+
+/* Carousel base class */
+.fillUp {
+  background-color: black;
+}
+

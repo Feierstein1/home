@@ -5,103 +5,28 @@ Profile Page, 2019
  -->
 <html lang="en">
   <header>
+  <script type="text/javascript" src="jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
+  
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu Condensed" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat Alternates" rel="stylesheet" type="text/css">
-  <style>
-  .title{
-    background: linear-gradient(90deg, #2F4F4F, #ADD8E6);
-    grid-area: title;
-	border-color: black;
-    border-width: 3px;
-    border-style: solid;
-  }
-  .title h2{
-	font-family: Lobster, serif;
-	margin: 10px;
-	color:#ffff;
-  }
-  .title h3{
-	font-family: Ubuntu Condensed, serif;
-	margin: 10px;
-	color:#000;
-  }
+  <link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet" type="text/css">
 
-  .nav {
-    background: #000;
-    grid-area: nav;
-
-  }
-  
-  .nav h4{
-    font-family: Ubuntu Condensed, serif;
-	margin: 10px;
-	color:#ffff;
-  }
-
-  .content {
-    background: DarkGrey;
-    grid-area: content;
-  }
-
-  .footer {
-    background: #696969;
-    grid-area: footer;
-  }
-  
-  .footer h4{
-    font-family: Montserrat Alternates, serif;
-	margin: 10px;
-	color:#ffff;
-  }
-
-  .container {
-    font-size: 1.5em;
-    min-height: 500px;
-    width: 100%;
-    background: LightGray;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px auto 2fr auto;
-    grid-gap: 0px;
-    grid-template-areas:
-      "title"
-      "nav"
-      "content"
-      "footer";
-  }
-
-  @media (min-width: 300px){
-    .container{
-      grid-template-columns: auto 1fr;
-      grid-template-rows: auto 1fr auto;
-      grid-template-areas:
-        "nav title"
-        "nav content"
-        "nav footer";
-    }
-  }
-
-  @media (min-width: 400px){
-    .container{
-      grid-template-areas:
-        "title title"
-        "nav content"
-        "footer footer";
-    }
-  }
-  </style>
   </header>
   <body>
+	<title>Home</title>
 	<main class='container'>
 		<div class='title'>
 			<div class="row">
 			<div class="col-xs-9">
-				<h2 id="myTitle">Kenny Feierstein</h2>
+				<h2 class="myTitle">Kenny Feierstein</h2>
 			</div>
 			<div class="col-xs-3">
-				<h3 id="subTitle">profile page</h3>
+				<h3 class="subTitle">HOME</h3>
 			</div>
 			</div>
 		</div>
@@ -111,14 +36,39 @@ Profile Page, 2019
 			<h4 id="projects">Projects</h4>
 			<h4 id="hobbies">Hobbies</h4>
 		</div>
-		<div class='content'>content</div>
+		<div class="content">
+			<div class="row">
+				<div class="col-xs-5" id="content-img"> 
+					<img class="img-responsive" id="myPic" src="me.jpg" alt="my picture">
+				</div>
+				<div class="col-xs-7" id="content-p">
+					<h3 class="content-header">Hello! and Welcome to my Profile</h3>
+					<p  class="content-description">
+						audrfhjgianviudaf
+						nviouanbviadnvidanbvo
+						agbvifdanbiudabnidabv
+						iodabnianbiajnkfjjhhhzhztjhTjrytj
+						jtjtjzatjtjtjtjzjtzjtjgjztfdjtzj
+						ztjzxdtjzdtjzdtjzdtjzdtjzd
+						tjzdtjzdtjzdtjzdtjzdt
+						jhzdtjzdtjzdtjzdtjzdtjzdt
+						jzdtjzdtjzdt
+						jzdtjjtjzdtjztjzdtjhzdtjztdj
+						zdtjzdtj
+						zdtjzdtjzdtjzdtjzdtjzdtjztdjztj
+						ztjztjzdtjzdtjzdtjzdtujujt
+						
+					<p/>
+				</div>
+			</div>
+		</div>
 		<div class='footer'>
 			<div class="row">
 				<div class="col-xs-9">
-					<h4 id="myFooter">created by Kenneth Feierstein</h4>
+					<h4 class="myFooter">created by Kenneth Feierstein</h4>
 				</div>
 				<div class="col-xs-3">
-					<h4 id="subFooter">2019-2020</h4>
+					<h5 class="subFooter">2019-2020</h5>
 				</div>
 			</div>
 		</div>

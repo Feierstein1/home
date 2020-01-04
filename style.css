@@ -51,8 +51,19 @@
   
   .content-header {
 	font-family: Ubuntu Condensed, serif;
-	margin: 20px;
 	color:#000;
+	margin: 20px 0px 20px 0px;
+	text-align: center
+  }
+  
+  .content-img{
+	width: 80%;
+	height: 80%;
+	border-color: black;
+    border-width: 3px;
+    border-style: solid;
+	margin:0px 0px 20px 20px;
+	border-radius: 25px;
   }
   
   .content-description{
@@ -80,7 +91,7 @@
   }
 
   .container {
-    min-height: 100%;
+    min-height: 700px;
     width: 100%;
     background: LightGray;
     display: grid;

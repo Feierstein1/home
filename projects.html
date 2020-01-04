@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- 
+Kenneth Feierstein
+Profile Page, 2019
+ -->
+<html lang="en">
+  <header>
+  <script type="text/javascript" src="jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu Condensed" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat Alternates" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet" type="text/css">
+
+  </header>
+  <body>
+	<title>Resume</title>
+	<main class='container'>
+		<div class='title'>
+			<div class="row">
+			<div class="col-xs-9">
+				<h2 class="myTitle">Kenny Feierstein</h2>
+			</div>
+			<div class="col-xs-3">
+				<h3 class="subTitle">PROJECTS</h3>
+			</div>
+			</div>
+		</div>
+		<div class='nav'>
+			<h4 id="home">Home</h4>
+			<h4 id="resume">Resume</h4>
+			<h4 id="projects">Projects</h4>
+			<h4 id="hobbies">Hobbies</h4>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-12" id="content-p1" style="margin-left:20px"> 
+					<h3 class="content-header">Report Mailing System</h3>
+					<p  class="content-description">
+						<b>
+							I developed and maintained a reporting system for our clients to recieve daily reports
+							on their students online course progress. We used (third party) Absorb LMS to host classes for students, 
+							but were limited on how we could create reports for every client based on their needs. To fix this issue, I 
+							had a CSV file of all our students information FTP'd every morning to our personal server 
+							where a cron job was set up to run PHP script that would store all our student information along 
+							with the clients recipient information in a MySQL database. Once this was done, another script would run that
+							would parse through the client information and collect the appropriate student information and format it in 
+							a clean HTML table. This table was placed in an email and sent to the client via PHPMailer.
+						</b>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12" id="content-p2" style="margin-left:20px"> 
+					<h3 class="content-header">LMS Course Regulations</h3>
+					<p  class="content-description">
+						<b> 
+							I used Absorb LMS RESTful API to build tools in our course content to meet state regulations. I created content that 
+							would timeout due to inactivity, show students time spent within the course, save student session time when active in a session,
+							promps that would ask students to securley indentify themselves, and prevent multiple sessions of a course to be opened.
+						</b>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12" id="content-p3" style="margin-left:20px"> 
+					<h3 class="content-header">Create and Maintain Online Affidavits</h3>
+					<p  class="content-description">
+						<b>
+							I created online affidavit forms that would ask for student information and confirm their 
+							identity using RESTful API to compare user input with backend information. I also gathered and store information from affidavit in 
+							custom fileds on Absorb LMS and also stored student information on private servers to meet state requirements.
+						</b>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12" id="content-p4" style="margin-left:20px"> 
+					<h3 class="content-header">Software Tools for Support Team</h3>
+					<p  class="content-description">
+						<b>
+							I created a tool used in office using RESTful API that would search through all attempts made by students and 
+							notify the office staff members if any students had breach their state regulatory requirements for session time spent.
+							This was initaially done manually and would take hours to get through a small list of students.
+							
+						</b>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class='footer'>
+			<div class="row">
+				<div class="col-xs-9">
+					<h4 class="myFooter">created by Kenneth Feierstein</h4>
+				</div>
+				<div class="col-xs-3">
+					<h5 class="subFooter">2019-2020</h5>
+				</div>
+			</div>
+		</div>
+	</main>
+  </body>
+ </html>

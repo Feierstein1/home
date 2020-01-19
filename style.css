@@ -1,10 +1,12 @@
-.title{
+/* DEFAULT LAYOUT
+-------------------------------------------------- */
+
+  .title{
     background: linear-gradient(90deg,#000, #083B44, #2F4F4F, #ADD8E6, #ADD8E6);
     grid-area: title;
 	border-color: black;
     border-width: 3px;
     border-style: solid;
-
   }
   .title h2{
 	font-family: Lobster, serif;
@@ -20,6 +22,9 @@
   .nav {
     background: #000;
     grid-area: nav;
+	position: -webkit-sticky;
+	position: sticky;
+	left: 0;
 
   }
   
@@ -27,6 +32,10 @@
     font-family: Ubuntu Condensed, serif;
 	margin: 10px;
 	color:#ffff;
+  }
+  
+  .nav span{
+	display:none;
   }
   
   .nav h4:hover {
@@ -82,6 +91,9 @@
   .footer {
     background: #696969;
     grid-area: footer;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
   }
   
   .footer h4{
@@ -103,6 +115,10 @@
       "content"
       "footer";
   }
+  .clickable:hover {
+	opacity: 0.7;
+	text-decoration: underline;
+  }
 
   @media (min-width: 300px){
     .container{
@@ -114,3 +130,37 @@
         "footer footer";
     }
   }
+  
+  /* SLIDER */
+  
+  #slider{
+	background-color:#BCC6CA;
+	height:100%;
+  }
+  
+  #left-column{
+	background-color:#BCC6CA;
+	height:100%;
+	margin-left:3%;
+	margin-right:5px
+	text-align:center;
+  }
+  
+  #right-column{
+	background-color:#BCC6CA;
+	height:100%;
+	margin-right:3%;
+	text-align: center;
+  }
+  
+  #left-button, #right-button{
+	background-color:black;
+	color:white;
+	margin-top:270px;
+	height:80px;
+	width:40px;
+	text-align: center;
+  }
+  
+
+   

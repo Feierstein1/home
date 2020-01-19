@@ -1,3 +1,4 @@
+window.location.reload(true);
 $(document).ready(function() {
 	
 	//PAGE NAVAGATION

@@ -1,6 +1,5 @@
-window.location.reload(true);
 $(document).ready(function() {
-	
+	window.location.reload(true);
 	//PAGE NAVAGATION
 	
 	$("#home").click(function(){

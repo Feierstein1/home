@@ -9,7 +9,9 @@ const bodyClass = document.body.classList;
 theme && bodyClass.add(theme);
 
 function toggleTheme() {
+  console.log("toggle");
   const current = localStorage.getItem('theme');
+  console.log("current", current);
   const next = themeMap[current];
 
   bodyClass.replace(current, next);

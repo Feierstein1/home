@@ -1,0 +1,25 @@
+list for LMS project:
+
+server hosting - either learn to host a server on your PC or look into server hosting options
+
+transactions - look into stripe(?)
+
+UI - use grid and formattinng tools like bootstrap/ search for other frameworks
+
+lessons - timed/tracked/local storage used for tracking/
+	content - templates for lesson content with images/links/facts/questions/
+	quiz - randomize questions from question pool
+	when lesson complete, change color
+
+confirm:
+	user account can be made
+	courses can be associated with user
+	department names can be made and associated with users
+	courses can have chapters and lessons
+	lessons completed under conditions
+	*watch entire video
+	
+	Quizes:
+		question banks
+		multiple choice/true/false/fill in the blank
+		

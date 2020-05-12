@@ -73,7 +73,7 @@ sub-nav b {
 
   profile {
     position: fixed;
-    top: 0rem;
+    bottom: 0rem;
     right: 0px;
     background-color: var(--nav-bgcolor);
     color: var(--nav-color);

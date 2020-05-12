@@ -24,3 +24,19 @@ function toggleTheme() {
 }
 
 document.getElementById("settings").onclick = toggleTheme;
+
+//This was my attempt at making the sub-nav appear on clicking
+//became too complicated through dynamically keeping the nav bar open and closing other
+//sub -nav links that were open
+
+/*$("#courses").click(function () {
+  $(this).toggleClass("sub-nav-expand");
+  $(".sub-courses").slideToggle(300);
+
+  //showSubNav("courses");
+});
+
+function showSubNav(n) {
+  $("#" + n).css({ height: "8rem" });
+  $(".sub-" + n).slideToggle(300);
+}*/

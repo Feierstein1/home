@@ -52,10 +52,17 @@ container {
   color: var(--nav-hover-color);
 }
 
+sub-nav b {
+  list-style: none;
+  display: none;
+}
+
+/* -----------------------------------------*/
+
 /* phones, tablets */
 @media only screen and (max-width: 600px) {
   main {
-    padding: 3rem 2rem 0 2rem;
+    padding: 4.5rem 2rem 0 2rem;
   }
 
   .logo {
@@ -112,9 +119,49 @@ container {
 
   .nav-text {
     display: none;
+    padding: 0 0.7rem 0 0.7rem;
+  }
+
+  sub-nav {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+  }
+
+  #courses:hover {
+    height: 8rem;
+    width: 6rem;
+    transition: height 400ms ease;
+  }
+  #courses:hover .sub-courses {
+    display: inline;
+  }
+  #courses:hover .sub-courses {
+    display: inline;
+  }
+
+  #students:hover {
+    height: 8rem;
+    width: 6rem;
+    transition: height 400ms ease;
+  }
+  #students:hover .sub-students {
+    display: inline;
+  }
+
+  #clients:hover {
+    height: 8rem;
+    width: 6rem;
+    transition: height 400ms ease;
+  }
+  #clients:hover .sub-clients {
+    display: inline;
   }
 }
-
+/* -----------------------------------------*/
 /* desktops */
 @media only screen and (min-width: 600px) {
   main {
@@ -189,6 +236,7 @@ container {
 
   .nav-item {
     padding: 0.5rem 0 0 0.5rem;
+    transition: height 300ms ease;
   }
 
   nav:hover .nav-text {
@@ -205,6 +253,43 @@ container {
 
   .nav-item:nth-last-child(2) {
     margin-top: auto;
+  }
+
+  sub-nav {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  .sub-nav-expand {
+    height: 8rem;
+  }
+
+  #courses:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #courses:hover .sub-courses {
+    display: inline;
+  }
+
+  #students:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #students:hover .sub-students {
+    display: inline;
+  }
+
+  #clients:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #clients:hover .sub-clients {
+    display: inline;
   }
 }
 

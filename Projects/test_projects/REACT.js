@@ -4,25 +4,35 @@
 "use strict";
 
 const e = React.createElement;
-const home = e("h3", { className: "greeting" }, "Hello, Home!");
-const clients = e("h3", { className: "greeting" }, "Hello, Clients!");
-const courses = e("h3", { className: "greeting" }, "Hello, Courses!");
-const students = e("h3", { className: "greeting" }, "Hello, Students!");
 
 const domContainer = document.querySelector("#render-main");
 
+$(".sub-nav").click(function () {
+  console.log(this.id);
+  let message = e("h3", { className: "greeting" }, this.id);
+  ReactDOM.render(message, domContainer);
+});
+
 $("#home").click(function () {
-  ReactDOM.render(home, domContainer);
+  console.log(this.id);
+  let message = e("h3", { className: "greeting" }, "I'm Home!");
+  ReactDOM.render(message, domContainer);
 });
 
-$("#clients").click(function () {
-  ReactDOM.render(clients, domContainer);
+$("#profile").click(function () {
+  console.log(this.id);
+  let message = e("h3", { className: "greeting" }, "Profile settings");
+  ReactDOM.render(message, domContainer);
 });
 
-$("#courses").click(function () {
-  ReactDOM.render(courses, domContainer);
+$("#logo").click(function () {
+  console.log(this.id);
+  let message = e("h3", { className: "greeting" }, "You clicked the logo");
+  ReactDOM.render(message, domContainer);
 });
 
-$("#students").click(function () {
-  ReactDOM.render(students, domContainer);
+$("#support").click(function () {
+  console.log(this.id);
+  let message = e("h3", { className: "greeting" }, "Support");
+  ReactDOM.render(message, domContainer);
 });

@@ -1,10 +1,11 @@
-const themeMap = {
-  dark: "light",
-  light: "normal",
-  normal: "dark",
-};
+/*const themeMap = {
+  dark: "red",
+  light: "blue",
+  blue: "dark",
+  red: "light",
+};*/
 if (localStorage.getItem("theme") == "undefined") {
-  const theme = localStorage.setItem("theme", themeMap["normal"]);
+  const theme = localStorage.setItem("theme", themeMap["light"]);
   console.log("set theme");
 }
 const theme = localStorage.getItem("theme");
@@ -12,7 +13,7 @@ const bodyClass = document.body.classList;
 theme && bodyClass.add(theme);
 console.log(theme && bodyClass.add(theme));
 
-function toggleTheme() {
+/*function toggleTheme() {
   console.log("toggle");
   const current = localStorage.getItem("theme");
   console.log("current", current);
@@ -21,9 +22,16 @@ function toggleTheme() {
   bodyClass.replace(current, next);
   localStorage.setItem("theme", next);
   console.log(current);
-}
+}*/
 
-document.getElementById("settings").onclick = toggleTheme;
+$(".sub-settings").click(function () {
+  console.log(this.id);
+  const current = localStorage.getItem("theme");
+  bodyClass.replace(current, this.id);
+  localStorage.setItem("theme", this.id);
+});
+
+/*document.getElementById("settings").onclick = toggleTheme;*/
 
 //This was my attempt at making the sub-nav appear on clicking
 //became too complicated through dynamically keeping the nav bar open and closing other

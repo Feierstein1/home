@@ -57,23 +57,6 @@ sub-nav b {
   display: none;
 }
 
-img-left {
-  margin-left: auto;
-  height: 200px;
-  width: 200px;
-}
-
-img-center {
-  margin-left: 35%;
-  height: 3rem;
-  width: 3rem;
-}
-
-img-right {
-  margin-right: auto;
-  height: 3rem;
-  width: 3rem;
-}
 /* -----------------------------------------*/
 
 /* phones */

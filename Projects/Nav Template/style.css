@@ -173,6 +173,146 @@ img-right {
     display: inline;
   }
 }
+/* -----------------------------------------*/
+/* desktops */
+@media only screen and (min-width: 600px) {
+  main {
+    padding: 5rem 0 0 11rem;
+    width: 50%;
+  }
+
+  profile {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: var(--nav-bgcolor);
+    color: var(--nav-color);
+    transition: width 600ms ease;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-bottom-left-radius: 10px;
+    border-style: solid;
+  }
+
+  .profile-text {
+    position: fixed;
+    display: none;
+    margin: 0.3rem 0 0 3rem;
+  }
+
+  profile:hover .profile-text {
+    display: inline;
+    transition: 200ms;
+  }
+
+  profile:hover {
+    width: 7rem;
+  }
+
+  .logo {
+    background-color: var(--logo-bgcolor);
+    color: var(--logo-color);
+    height: 4rem;
+    padding: 0.7rem 0.4rem 0 0.4rem;
+  }
+
+  .icon {
+    position: fixed;
+    padding-top: 0.5rem;
+    padding-left: 0.3rem;
+  }
+
+  nav {
+    position: fixed;
+    background-color: var(--nav-bgcolor);
+    color: var(--nav-color);
+    text-transform: uppercase;
+    transition: width 400ms ease;
+    width: 4rem;
+    height: 100vh;
+  }
+
+  nav:hover {
+    width: 10rem;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0 0 0.5rem;
+    transition: height 300ms ease;
+  }
+
+  nav:hover .nav-text {
+    display: inline;
+    transition: 200ms;
+  }
+
+  .nav-text {
+    position: fixed;
+    display: none;
+    margin-top: 1rem;
+    margin-left: 4rem;
+  }
+
+  .nav-item:nth-last-child(1) {
+    margin-top: auto;
+  }
+
+  sub-nav {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .sub-nav-expand {
+    height: 8rem;
+  }
+
+  #courses:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #courses:hover .sub-courses {
+    display: inline;
+  }
+
+  #students:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #students:hover .sub-students {
+    display: inline;
+  }
+
+  #clients:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #clients:hover .sub-clients {
+    display: inline;
+  }
+
+  #settings:hover {
+    height: 10rem;
+    transition: height 400ms ease;
+  }
+  #settings:hover .sub-settings {
+    display: inline;
+  }
+}
 
 .dark {
   --logo-bgcolor: #000000;

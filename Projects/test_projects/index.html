@@ -11,7 +11,168 @@
     <script src="jquery.js"></script>
     <script src="https://use.fontawesome.com/55a1884343.js"></script>
     <script defer src="script.js"></script>
-    <title>Nav Test</title>
+    <script
+      src="/Files/js/scripts/test/TinCanJS/build/tincan-min.js"
+      type="text/javascript"
+    ></script>
+    <!--common tincan scripts-->
+    <script
+      src="/Files/js/scripts/test/common.js"
+      type="text/javascript"
+    ></script>
+    <script>
+			Chapter = "Basic"; //  Other/Basic/Laws
+			PII_Validation = false; //  true/false
+			PII_Collection = "none"; //  DOB/SSN/Both/none
+			SSN_format = 4;  // 4/9
+			Complete_All = false; //  true/false
+			Timeout_90_minute = false; //  true/false
+			Timeout_10_minute = false; //  true/false
+			Allow_Multiple_tab = true; //  true/false
+			hide_x = false; //  true/false
+			pageWait = false; //  true/false
+			showTime = false; //   true/false
+			saveExit = false;  //   true/false
+		</script>
+    <!--common tincan scripts-->
+    
+		<title>Basic Principles of Insurance</title>
+		
+		<script type="text/javascript">
+	        var pageArray = [
+				"/Files/TinCan/English/CA/CA_MASTER/Keywords/G_Principles.html",
+				"p01.html",
+				"p02.html",
+				"p03.html",
+				"p04.html",
+				"p05.html",
+				"p06.html",
+				"p07.html",
+				"p08.html",
+				"p09.html",
+				"p10.html",
+				"p11.html",
+				"p12.html",
+				"p13.html",
+				"p14.html",
+				"p15.html",
+				"p16.html",
+				"p17.html",
+				"p18.html",
+				"p19.html",
+				"p20.html",
+				"/Files/TinCan/English/CA/CA_MASTER/Review_Notes/G_Principles.html",
+			  ],	//copy and replace everything from here down
+            processedUnload = false,
+            reachedEnd = true,
+            maxPageReached = 0,
+            tincan = new TinCan(
+                {
+                    url: window.location.href,
+                    activity: GolfExample.CourseActivity
+                }
+            );
+</script>
+<style type="text/css">
+  .iframe-wrap {
+      width: 100%;
+      height: 100vh;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll
+  }
+      /* change the width + height */
+      .iframe-wrap iframe {
+          width: 100%;
+          height: 100vh;
+          border: none;
+          display: block;
+      }
+
+  .dropdown {
+      position: -webkit-sticky;
+      position: sticky;
+      bottom: 10;
+      left: 0;
+  }
+.blk_buttons{
+height:30px;
+font-weight:bold;
+margin:5px;
+width:100px;
+background-color:black;
+color:#9A1B1E;
+border-radius: 10px;
+}
+.red_buttons{
+height:30px;
+font-weight:bold;
+margin:5px;
+background-color:#9A1B1E;
+color:white;
+border-radius: 10px;
+}
+#expire{
+width: 350px;
+height: 250px;
+border-radius: 10px;
+background:white;
+padding: 50px;
+border: 7px double gray;
+color:#9A1B1E;
+text-align: center; 
+font-size: 20px;
+}
+#identify_student{
+width: 550px;
+height: 450px;
+border-radius: 10px;
+background:white;
+padding: 50px;
+border: 7px double gray;
+top: 0%;
+}
+.prompt{
+background-color:white;
+width:50%;
+padding: 50px;
+border: 7px double gray; 
+border-radius: 10px;
+align:center;
+}
+.buffer{
+margin:10px;
+}
+p{
+color:#9A1B1E;
+font-size: 20px;
+text-align: center;
+}
+.help_message{
+color:#9A1B1E;
+font-size: 20px;
+margin:2rem;
+text-align: justify;
+}
+.form_inputs{
+background-color:#E8E8E8;
+color:#9A1B1E;
+border:3px solid #9A1B1E;
+height:12px;
+padding: 10px;
+border-radius: 7px;
+}
+.help-row{
+display: flex;
+justify-content: center;
+padding-bottom:1rem;
+}
+.help-column{
+display: flex;
+flex-direction: column;
+margin: 2rem;
+}
+
+</style>
   </head>
   <body>
     <container>
@@ -25,68 +186,25 @@
       </profile>
       <nav>
         <ul class="nav-list">
-          <li class="nav-item logo" id="logo">
-            <i class="fa fa-fw fa-cubes fa-2x icon"></i>
-            <b class="nav-text">LOGO</b>
-          </li>
-          <li class="nav-item" id="home">
+          <li class="nav-item" id="time">
             <i class="fa fa-fw fa-home fa-2x icon"></i>
             <b class="nav-text">HOME</b>
           </li>
-          <li class="nav-item mobile-drop" id="courses">
+          <li class="nav-item mobile-drop" id="previous">
             <i class="fa fa-fw fa-book fa-2x icon"></i>
-            <b class="nav-text courses-text">COURSES</b>
-            <sub-nav>
-              <b class="sub-nav sub-courses" id="sub-courses-option1"
-                >courses option 1</b
-              >
-              <b class="sub-nav sub-courses" id="sub-courses-option2"
-                >courses option 2</b
-              >
-              <b class="sub-nav sub-courses" id="sub-courses-option3"
-                >courses option 3</b
-              >
-            </sub-nav>
+            <b class="nav-text courses-text">PREVIOUS</b>
           </li>
-          <li class="nav-item mobile-drop" id="students">
+          <li class="nav-item mobile-drop" id="save">
             <i class="fa fa-fw fa-graduation-cap fa-2x icon"></i>
-            <b class="nav-text students-text">STUDENTS</b>
-            <sub-nav>
-              <b class="sub-nav sub-students" id="sub-students-option1"
-                >students option 1</b
-              >
-              <b class="sub-nav sub-students" id="sub-students-option2"
-                >students option 2</b
-              >
-              <b class="sub-nav sub-students" id="sub-students-option3"
-                >students option 3</b
-              >
-            </sub-nav>
+            <b class="nav-text students-text">Save and Exit</b>
           </li>
-          <li class="nav-item mobile-drop" id="clients">
+          <li class="nav-item mobile-drop" id="next">
             <i class="fa fa-fw fa-users fa-2x icon"></i>
-            <b class="nav-text clients-text">CLIENTS</b>
-            <sub-nav>
-              <b class="sub-nav sub-clients" id="sub-clients-option1"
-                >clients option 1</b
-              >
-              <b class="sub-nav sub-clients" id="sub-clients-option2"
-                >clients option 2</b
-              >
-              <b class="sub-nav sub-clients" id="sub-clients-option3"
-                >clients option 3</b
-              >
-            </sub-nav>
+            <b class="nav-text clients-text">NEXT</b>
           </li>
           <li class="nav-item" id="settings">
             <i class="fa fa-fw fa-cog fa-2x icon"></i>
             <b class="nav-text settings-text">SETTINGS</b>
-            <sub-nav>
-              <b class="sub-nav sub-settings" id="light">Cloudy Sky</b>
-              <b class="sub-nav sub-settings" id="blue">Arctic Glacier</b>
-              <b class="sub-nav sub-settings" id="red">Western Rust</b>
-              <b class="sub-nav sub-settings" id="dark">Midnight Gleam</b>
-            </sub-nav>
           </li>
           <li class="nav-item" id="support">
             <i class="fa fa-fw fa-envelope fa-2x icon"></i>
@@ -96,26 +214,171 @@
       </nav>
       <main>
         <div id="render-main">
-          <div>
-            <h1>Kenny Feierstein</h1>
-            <img class="img-left" src="me.jpg" />
-            <p>
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur?"
-            </p>
-          </div>
+          <center>
+            <!--Time spent in course shown here-->
+            <div class="timer-holder" style="color:#9A1B1E; font-weight: bold; ">
+              <div id="timeSpent">
+                <b style="font-size: 18px;">Total Time Spent in Course:</b>
+                <b id="i-timer" style="font-size: 20px;"></b>
+                <b style="font-size: 18px; color:white">(SAVE & EXIT to update study time)</b>
+                <p id="i-timer" style="font-size: 24px;"></p>
+              </div>
+              <!--Navigation Buttons-->
+              <div id="navDiv">
+                <center>
+                  <div class = "row">
+                    <b id="DisplayPgNum" style="font-size: 18px; font-weight:bold; color:#9A1B1E;"></b><br /> <!--Page number display-->
+                  </div>
+                  <div id="navButtons">
+                    <div class = "row">
+                      <input type="button" class="blk_buttons" value="<- PREVIOUS" id="butPrevious" onclick="doPrevious();">
+                      <input id="exitButton" class="red_buttons" type="button" value="SAVE & EXIT" onclick="doExit();" >
+                      <input type="button" class="blk_buttons" value="NEXT ->" id="butNext" onclick="doNext();">
+                    </div>
+                    <div class = "row">
+                      <input type="button" class="red_buttons" value="NEED HELP?" id="HELP_button" />
+                    </div>
+                  </div>
+                </center>
+              </div>
+        
+              <!--Container for the content scroller-->
+              <div id="div_content" class="iframe-wrap">
+                <iframe width="100%" id="contentFrame" src=""></iframe> <!--Where the content plays-->
+              </div>
+            
+              <!-- 10 minute Inactivity verification text-->
+              <center>
+                <div class="prompt" id="showdiv" class="row" hidden>
+                  <div class = "row buffer">
+                    <p>
+                      Still there? Please type the following word to continue in the course.
+                    </p>
+                  </div>
+                  <div class = "row buffer">
+                    <h3 id="pword" style="color:black;"></h3>
+                  </div>
+                  <div class = "row buffer">
+                    <input type="text" id="user_input" name="user_input">
+                  </div>
+                  <div class = "row buffer">
+                    <button class="btn btn-primary" id="captcha_check">submit</button>
+                  </div>
+                </div>
+        
+                <!--75-90 minute timeout-->
+                <div id="expire" class="row" hidden>
+                  <p>This activity is set to expire in 2 minutes. To save your study progress and time spent, please hit the save button above.</p>
+                </div>
+                
+                <!--check if course is registered to the correct student. Usually in the first chapter.-->
+                <div id="identify_student"  class="row" hidden>
+                  <div class = "row buffer">
+                    <p>
+                      This course is registered to <u><b style = "color:black" id ="student_name"></b></u>.<br> 
+                      Accounts should be accessed only by the registered student. If you are not the registered student, please call customer service at 904-999-4923.
+                      <b style = "color:black"> IF YOUR NAME IS NOT THE NAME SHOWN HERE, DO NOT PROCEED. YOU WILL NOT RECEIVE CREDIT.</b>
+                    </p>
+                  </div>
+                  <div class = "row buffer">
+                    <b> My name is the name shown above. </b>
+                  </div>
+                  <div class = "row buffer">
+                    <button class="btn btn-primary" id="identify_student_submit">confirm</button>
+                  </div>
+                </div>
+                
+                <!--PII Validation. Validate users identity as the registered student by asking PI questions-->
+                <div id="validation" class="row prompt" hidden>
+                  <div class = "row buffer">
+                    <p>
+                      Your state requires applicants to complete 20 hours of pre-licensing education for each major line of authority. 
+                      Applicants seeking to become licensed in life insurance must complete a minimum of 20 hours of pre-licensing education. 
+                      Applicants seeking to become licensed in health and accident insurance must complete a minimum of 20 hours of pre-licensing education.
+                      Applicants seeking to become licensed in life, health, and accident insurance must complete a minimum of 40 hours of pre-licensing education.
+                      XCEL will be tracking your time in the course. You will not be issued a Certificate of Completion until you verify that you have met the minimum hours requirements.
+                    </p>
+                  </div>
+                  <div class = "row buffer">
+                    <h2 id="v_q" style="color:black"></h2> <!--grab random PII question-->
+                  </div>
+                  <div class = "row buffer">
+                    <input type="text" id="val" name="user_input">
+                  </div>
+                  <div class = "row buffer">
+                    <button class="btn btn-primary" id="validate">submit</button>
+                  </div>
+                </div>
+                
+                <!--Collect the studetns SSN and/or DOB for certification purposes. Usually at the end of the course-->
+                <div id="pii_collection" class="row prompt" style="color:black" hidden>
+                    <center>
+                      <div class = "row buffer">
+                        <h5>Personal information required</h5><h6> (to be completed by student)</h6>
+                      </div>
+                      <div class = "row buffer">
+                        <h3> Your state requires us to collect the information below. <br/>Please complete.</h3>
+                      </div>
+                      <hr>
+                      <div class = "row buffer">	
+                        <h5>Enter the last 4 digits of your Social Security number here: 
+                      </div>
+                      <div class = "row buffer">	
+                        <input id="SSN" type="text" name="SSN" class="form_inputs" autocomplete="off" onpaste="return false;" required></h5>
+                      </div>
+                      <div class = "row buffer">	
+                        <h5>Re-enter student’s last 4 digits of Social Security number : 
+                      </div>
+                      <div class = "row buffer">	
+                        <input id="confirm_SSN" type="text" name="confirm_SSN" class="form_inputs" autocomplete="off" onpaste="return false;" required></h5>
+                      </div>
+                      <div class = "row buffer">	
+                        <h5>Enter your Date of Birth here [MM/DD/YYYY]: 
+                      </div>
+                      <div class = "row buffer">	
+                        <input id="DOB" type="text" name="DOB" class="form_inputs" autocomplete="off" onpaste="return false;" required></h5>
+                      </div>
+                      <div class = "row buffer">	
+                        <h5>Re-enter student’s Date of Birth here [MM/DD/YYYY]: 
+                      </div>
+                      <div class = "row buffer">	
+                        <input id="confirm_DOB" type="text" name="confirm_DOB" class="form_inputs" autocomplete="off" onpaste="return false;" required></h5>
+                      </div>
+                      <div class = "row buffer">	
+                        <button class="btn btn-primary" id="pii_submit">submit</button>
+                      </div>				
+                    </center>
+                  </div>
+                
+                <!--Help propmt. Messages are sent to support via php on our server-->
+                <div id="HELP_div" class="row" style="width: 40rem; height: 40rem; border-radius: 10px; background:white; border: 7px double gray; margin-top: 3rem;" hidden>
+                  <center> For any other issues, please call <b>(904) 999-4923</b> for customer support</center><br />
+                  <button class="red_buttons" id="EXIT_button" style="width:20rem">EXIT HELP SCREEN</button>
+                  <div id="help_content">
+                    <center> <b style="color:#9A1B1E;text-align: center; font-size: 30px">NEED HELP?</b> </center>
+                    <div id="Help_form">
+                      <div class="help-row" style="margin-top:-1.5rem">
+                        <div class="help-column">
+                          <h5>*Username: <br><input type="text" class="form_inputs help" id="username" size=70 placeholder="Student's username" required></h5>
+                          <h5>Location: <br><input type="text" class="form_inputs" id="location" size=70 placeholder="Home, Library, Starbucks, Office."></h5>
+                        </div>
+                      </div>
+                      <h5 style="margin-top:-1rem">*Comments: <br><textarea maxlength="444" id="comment" class="form_inputs help" placeholder="Please be specific. What is the error message? When does it happen? The more details the better. The more details the better." style="height:60px; width:500px;"></textarea></h5>
+                      <h5>*How can we assist you?:<br/>
+                      <select class="form_inputs help" id="issue" style="width:270px; height:30px; padding:2px; font-size:10px">
+                        <option value="ERROR3" ><b>I NEED TECHNICAL/CUSTOMER SUPPORT</b></option>
+                        <option value="ERROR2" ><b>I DON'T UNDERSTAND THE CONTENT AND NEED AN INSTRUCTOR</b></option>
+                        <option value="ERROR1" ><b>I THINK I FOUND AN ERROR</b></option>
+                      </select>
+                      </h5>
+                      <center><button class="blk_buttons" id="submit_help">SUBMIT</button></center>
+                      <b id="help_error_message" hidden>**Please fill out all required(*) information for your help request or exit the help screen at the top**</b>
+                    </div>
+                  </div>
+                </div>
+              </center>
+            </div>
+          </center>
         </div>
       </main>
     </container>
@@ -129,5 +392,6 @@
     ></script>
 
     <script src="REACT.js"></script>
+    <script src="/Files/js/CORE_SCRIPT_TEST.js?dev='" + Math.floor(Math.random() * 100) + "'"></script>
   </body>
 </html>

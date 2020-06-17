@@ -463,7 +463,7 @@
 		//Get the time spent in the course and display it if true.
 		//if false, then hide the time display
 		if(showTime == true){
-			document.getElementById("i-timer").innerHTML = getTimeSpent();
+			document.getElementById("time").innerHTML = getTimeSpent();
 		}
 		else{
 			$('#timeSpent').fadeOut()

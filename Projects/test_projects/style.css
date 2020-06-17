@@ -32,10 +32,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #5151db;
 }
-container {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .nav-item {
   display: flex;
@@ -57,121 +53,167 @@ sub-nav b {
   display: none;
 }
 
-img-left {
-  margin-left: auto;
-  height: 200px;
-  width: 200px;
+.nav-text {
+  padding: 0.3rem;
 }
 
-img-center {
-  margin-left: 35%;
-  height: 3rem;
-  width: 3rem;
-}
-
-img-right {
-  margin-right: auto;
-  height: 3rem;
-  width: 3rem;
-}
 /* -----------------------------------------*/
-
-/* phones */
-@media only screen and (max-width: 400px) {
-  #settings {
-    display: none;
-  }
-}
-
-/* tablets */
 @media only screen and (max-width: 600px) {
-  main {
-    padding: 4.5rem 2rem 0 2rem;
-  }
-
-  .logo {
-    background-color: var(--logo-bgcolor);
-    color: var(--logo-color);
-    height: 3rem;
-  }
-
-  profile {
-    position: fixed;
-    bottom: 0rem;
-    right: 0px;
-    background-color: var(--nav-bgcolor);
-    color: var(--nav-color);
-    transition: width 600ms ease;
-    width: 3.2rem;
-    height: 3rem;
-    margin-left: 3rem;
-    z-index: 1;
-  }
-
-  .profile-text {
-    display: none;
-  }
-
-  nav {
-    position: fixed;
-    background-color: var(--nav-bgcolor);
-    color: var(--nav-color);
-    text-transform: uppercase;
-    height: 3.5rem;
-    width: 100%;
-  }
-
-  .nav-item {
-    height: 3rem;
-  }
-
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 3.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: felx-start;
-    width: 100%;
-  }
-
-  .nav-item {
-    padding: 0.5rem 0.5rem 0 0.5rem;
-  }
-
   .nav-text {
     display: none;
-    padding: 0 0.7rem 0 0.7rem;
   }
+}
 
-  sub-nav {
-    position: fixed;
-    font-size: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5rem;
-    margin-left: -0.5rem;
-  }
+container {
+  display: flex;
+  flex-direction: column;
+}
 
-  .mobile-drop:hover {
-    height: 9rem;
-    transition: height 400ms ease;
-  }
+main {
+  padding: 0;
+  margin-top: 5rem;
+  height: 30rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
 
-  #courses:hover .sub-courses {
-    display: inline;
-  }
+#div_content {
+  width: 95%;
+  height: 95%;
+}
 
-  #students:hover .sub-students {
-    display: inline;
-  }
+#contentFrame {
+  width: 100%;
+  height: 100%;
+}
 
-  #clients:hover .sub-clients {
-    display: inline;
-  }
+settings {
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
+  background-color: var(--nav-bgcolor);
+  color: var(--nav-color);
+  transition: width 600ms ease;
+  width: 3.2rem;
+  height: 3rem;
+  z-index: 1;
+}
+support {
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  background-color: var(--nav-bgcolor);
+  color: var(--nav-color);
+  transition: width 600ms ease;
+  width: 3.2rem;
+  height: 3rem;
+  z-index: 1;
+}
+
+nav {
+  position: fixed;
+  background-color: var(--nav-bgcolor);
+  color: var(--nav-color);
+  text-transform: uppercase;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.nav-item {
+  height: 3rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 3.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.blk_buttons {
+  height: 30px;
+  font-weight: bold;
+  margin: 5px;
+  width: 100px;
+  background-color: black;
+  color: #9a1b1e;
+  border-radius: 10px;
+}
+.red_buttons {
+  height: 30px;
+  font-weight: bold;
+  margin: 5px;
+  background-color: #9a1b1e;
+  color: white;
+  border-radius: 10px;
+}
+#expire {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  background: white;
+  padding: 50px;
+  border: 7px double gray;
+  color: #9a1b1e;
+  text-align: center;
+  font-size: 20px;
+}
+#identify_student {
+  width: 550px;
+  height: 450px;
+  border-radius: 10px;
+  background: white;
+  padding: 50px;
+  border: 7px double gray;
+  top: 0%;
+}
+.prompt {
+  background-color: white;
+  width: 50%;
+  padding: 50px;
+  border: 7px double gray;
+  border-radius: 10px;
+}
+.buffer {
+  margin: 10px;
+}
+p {
+  color: #9a1b1e;
+  font-size: 20px;
+  text-align: center;
+}
+.help_message {
+  color: #9a1b1e;
+  font-size: 20px;
+  margin: 2rem;
+  text-align: justify;
+}
+.form_inputs {
+  background-color: #e8e8e8;
+  color: #9a1b1e;
+  border: 3px solid #9a1b1e;
+  height: 12px;
+  padding: 10px;
+  border-radius: 7px;
+}
+.help-row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.help-column {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
 }
 
 .dark {

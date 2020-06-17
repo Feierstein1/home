@@ -1,9 +1,9 @@
-/*const themeMap = {
+const themeMap = {
   dark: "red",
   light: "blue",
   blue: "dark",
   red: "light",
-};*/
+};
 if (localStorage.getItem("theme") == "undefined") {
   const theme = localStorage.setItem("theme", themeMap["light"]);
   console.log("set theme");
@@ -13,7 +13,7 @@ const bodyClass = document.body.classList;
 theme && bodyClass.add(theme);
 console.log(theme && bodyClass.add(theme));
 
-/*function toggleTheme() {
+function toggleTheme() {
   console.log("toggle");
   const current = localStorage.getItem("theme");
   console.log("current", current);
@@ -22,13 +22,10 @@ console.log(theme && bodyClass.add(theme));
   bodyClass.replace(current, next);
   localStorage.setItem("theme", next);
   console.log(current);
-}*/
+}
 
-$(".sub-settings").click(function () {
-  console.log(this.id);
-  const current = localStorage.getItem("theme");
-  bodyClass.replace(current, this.id);
-  localStorage.setItem("theme", this.id);
+$("settings").click(function () {
+  toggleTheme();
 });
 
 /*document.getElementById("settings").onclick = toggleTheme;*/

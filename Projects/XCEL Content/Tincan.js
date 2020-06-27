@@ -324,7 +324,7 @@
 			
 			SaveSpendTime();
             ShowCloseButton();
-			$("body").html("<br/><center><h1 class=''>" + message + "</h1></center>");
+			$("body").html("<br/><center><h1 class='display-font'>" + message + "</h1></center>");
            // document.write("<br/><br/><br/><center><h1>" + message + "</h1></center>");
 			//console.log("saveClose");
             setTimeout(function () {

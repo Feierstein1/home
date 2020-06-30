@@ -7,32 +7,16 @@ const e = React.createElement;
 
 const domContainer = document.querySelector("#render-main");
 
-$(".sub-nav").click(function () {
-  console.log(this.id);
-  let message = e("h3", { className: "greeting" }, this.id);
-  ReactDOM.render(message, domContainer);
-});
-
 $("#home").click(function () {
   console.log(this.id);
   let message = e("h3", { className: "greeting" }, "I'm Home!");
   ReactDOM.render(message, domContainer);
 });
 
-$("#profile").click(function () {
-  console.log(this.id);
-  let message = e("h3", { className: "greeting" }, "Profile settings");
-  ReactDOM.render(message, domContainer);
+var example = React.createClass({
+  render: function () {
+    return <h2>this is an example of code</h2>;
+  },
 });
 
-$("#logo").click(function () {
-  console.log(this.id);
-  let message = e("h3", { className: "greeting" }, "You clicked the logo");
-  ReactDOM.render(message, domContainer);
-});
-
-$("#support").click(function () {
-  console.log(this.id);
-  let message = e("h3", { className: "greeting" }, "Support");
-  ReactDOM.render(message, domContainer);
-});
+ReactDOM.render(<example />, document.getElementById9("render-main"));

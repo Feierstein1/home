@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Oswald:wght@352&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery.js"></script>
+    <script src="https://use.fontawesome.com/55a1884343.js"></script>
+    <script defer src="script.js"></script>
+    <title>Nav Test</title>
+  </head>
+  <body>
+    <container>
+      <profile>
+        <ul class="nav-list">
+          <li class="nav-item" id="profile">
+            <i class="fa fa-fw fa-user-circle fa-2x profile-icon"></i>
+            <b class="profile-text">PROFILE</b>
+          </li>
+        </ul>
+      </profile>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item logo" id="logo">
+            <i class="fa fa-fw fa-cubes fa-2x icon"></i>
+            <b class="nav-text">LOGO</b>
+          </li>
+          <li class="nav-item" id="home">
+            <i class="fa fa-fw fa-home fa-2x icon"></i>
+            <b class="nav-text">HOME</b>
+          </li>
+          <li class="nav-item mobile-drop" id="courses">
+            <i class="fa fa-fw fa-book fa-2x icon"></i>
+            <b class="nav-text courses-text">COURSES</b>
+            <sub-nav>
+              <b class="sub-nav sub-courses" id="sub-courses-option1"
+                >courses option 1</b
+              >
+              <b class="sub-nav sub-courses" id="sub-courses-option2"
+                >courses option 2</b
+              >
+              <b class="sub-nav sub-courses" id="sub-courses-option3"
+                >courses option 3</b
+              >
+            </sub-nav>
+          </li>
+          <li class="nav-item mobile-drop" id="students">
+            <i class="fa fa-fw fa-graduation-cap fa-2x icon"></i>
+            <b class="nav-text students-text">STUDENTS</b>
+            <sub-nav>
+              <b class="sub-nav sub-students" id="sub-students-option1"
+                >students option 1</b
+              >
+              <b class="sub-nav sub-students" id="sub-students-option2"
+                >students option 2</b
+              >
+              <b class="sub-nav sub-students" id="sub-students-option3"
+                >students option 3</b
+              >
+            </sub-nav>
+          </li>
+          <li class="nav-item mobile-drop" id="clients">
+            <i class="fa fa-fw fa-users fa-2x icon"></i>
+            <b class="nav-text clients-text">CLIENTS</b>
+            <sub-nav>
+              <b class="sub-nav sub-clients" id="sub-clients-option1"
+                >clients option 1</b
+              >
+              <b class="sub-nav sub-clients" id="sub-clients-option2"
+                >clients option 2</b
+              >
+              <b class="sub-nav sub-clients" id="sub-clients-option3"
+                >clients option 3</b
+              >
+            </sub-nav>
+          </li>
+          <li class="nav-item" id="settings">
+            <i class="fa fa-fw fa-cog fa-2x icon"></i>
+            <b class="nav-text settings-text">SETTINGS</b>
+            <sub-nav>
+              <b class="sub-nav sub-settings" id="light">Cloudy Sky</b>
+              <b class="sub-nav sub-settings" id="blue">Arctic Glacier</b>
+              <b class="sub-nav sub-settings" id="red">Western Rust</b>
+              <b class="sub-nav sub-settings" id="dark">Midnight Gleam</b>
+            </sub-nav>
+          </li>
+          <li class="nav-item" id="support">
+            <i class="fa fa-fw fa-envelope fa-2x icon"></i>
+            <b class="nav-text">SUPPORT</b>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div id="render-main"></div>
+      </main>
+    </container>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <script text="script/babel" src="REACT.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+:root {
+  font-size: 16px;
+  font-family: "Oswald";
+  --nav-font: "Crete Round";
+  --logo-bgcolor: #000000;
+  --logo-color: #ffffff;
+  --nav-bgcolor: #20207c;
+  --nav-color: #dad9e0;
+  --nav-hover-color: #ffffff;
+  --nav-hover-bgcolor: #120347;
+  --sub-nav-bgcolor: #9694a0;
+  --text-primary: #000000;
+  --text-secondary: #26252e;
+  --bg-primary: #f5f5fa;
+  --transition-speed: 900ms;
+}
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}

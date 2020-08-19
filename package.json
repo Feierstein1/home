@@ -1,0 +1,26 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "this is a test of node package in home",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feierstein1/home.git"
+  },
+  "keywords": [
+    "test",
+    "temp"
+  ],
+  "author": "Kenny Feierstein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Feierstein1/home/issues"
+  },
+  "homepage": "https://github.com/Feierstein1/home#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

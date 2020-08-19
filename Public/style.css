@@ -1,0 +1,367 @@
+:root {
+  font-size: 16px;
+  font-family: "Oswald";
+  --nav-font: "Crete Round";
+  --logo-bgcolor: #000000;
+  --logo-color: #ffffff;
+  --nav-bgcolor: #20207c;
+  --nav-color: #dad9e0;
+  --nav-hover-color: #ffffff;
+  --nav-hover-bgcolor: #120347;
+  --sub-nav-bgcolor: #9694a0;
+  --text-primary: #000000;
+  --text-secondary: #26252e;
+  --bg-primary: #f5f5fa;
+  --transition-speed: 900ms;
+}
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #a79dc5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #5151db;
+}
+container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  display: flex;
+  height: 4rem;
+  text-align: center;
+  border-width: 0.25rem;
+  border-left-color: rgb(18, 13, 83);
+  border-bottom-color: rgb(18, 13, 83);
+}
+
+.nav-item:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--nav-hover-bgcolor);
+  color: var(--nav-hover-color);
+}
+
+sub-nav b {
+  list-style: none;
+  display: none;
+}
+
+img-left {
+  margin-left: auto;
+  height: 200px;
+  width: 200px;
+}
+
+img-center {
+  margin-left: 35%;
+  height: 3rem;
+  width: 3rem;
+}
+
+img-right {
+  margin-right: auto;
+  height: 3rem;
+  width: 3rem;
+}
+/* -----------------------------------------*/
+
+/* phones */
+@media only screen and (max-width: 400px) {
+  #settings {
+    display: none;
+  }
+}
+
+/* tablets */
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 4.5rem 2rem 0 2rem;
+  }
+
+  .logo {
+    background-color: var(--logo-bgcolor);
+    color: var(--logo-color);
+    height: 3rem;
+  }
+
+  profile {
+    position: fixed;
+    bottom: 0rem;
+    right: 0px;
+    background-color: var(--nav-bgcolor);
+    color: var(--nav-color);
+    transition: width 600ms ease;
+    width: 3.2rem;
+    height: 3rem;
+    margin-left: 3rem;
+    z-index: 1;
+  }
+
+  .profile-text {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    background-color: var(--nav-bgcolor);
+    color: var(--nav-color);
+    text-transform: uppercase;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  .nav-item {
+    height: 3rem;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 3.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: felx-start;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+
+  .nav-text {
+    display: none;
+    padding: 0 0.7rem 0 0.7rem;
+  }
+
+  sub-nav {
+    position: fixed;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-left: -0.5rem;
+  }
+
+  .mobile-drop:hover {
+    height: 9rem;
+    transition: height 400ms ease;
+  }
+
+  #courses:hover .sub-courses {
+    display: inline;
+  }
+
+  #students:hover .sub-students {
+    display: inline;
+  }
+
+  #clients:hover .sub-clients {
+    display: inline;
+  }
+}
+/* -----------------------------------------*/
+/* desktops */
+@media only screen and (min-width: 600px) {
+  main {
+    padding: 5rem 0 0 11rem;
+    width: 50%;
+  }
+
+  profile {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: var(--nav-bgcolor);
+    color: var(--nav-color);
+    transition: width 600ms ease;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-bottom-left-radius: 10px;
+    border-style: solid;
+  }
+
+  .profile-text {
+    position: fixed;
+    display: none;
+    margin: 0.3rem 0 0 3rem;
+  }
+
+  profile:hover .profile-text {
+    display: inline;
+    transition: 200ms;
+  }
+
+  profile:hover {
+    width: 7rem;
+  }
+
+  .logo {
+    background-color: var(--logo-bgcolor);
+    color: var(--logo-color);
+    height: 4rem;
+    padding: 0.7rem 0.4rem 0 0.4rem;
+  }
+
+  .icon {
+    position: fixed;
+    padding-top: 0.5rem;
+    padding-left: 0.3rem;
+  }
+
+  nav {
+    position: fixed;
+    background-color: var(--nav-bgcolor);
+    color: var(--nav-color);
+    text-transform: uppercase;
+    transition: width 400ms ease;
+    width: 4rem;
+    height: 100vh;
+  }
+
+  nav:hover {
+    width: 10rem;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0 0 0.5rem;
+    transition: height 300ms ease;
+  }
+
+  nav:hover .nav-text {
+    display: inline;
+    transition: 200ms;
+  }
+
+  .nav-text {
+    position: fixed;
+    display: none;
+    margin-top: 1rem;
+    margin-left: 4rem;
+  }
+
+  .nav-item:nth-last-child(1) {
+    margin-top: auto;
+  }
+
+  sub-nav {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .sub-nav-expand {
+    height: 8rem;
+  }
+
+  #courses:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #courses:hover .sub-courses {
+    display: inline;
+  }
+
+  #students:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #students:hover .sub-students {
+    display: inline;
+  }
+
+  #clients:hover {
+    height: 8rem;
+    transition: height 400ms ease;
+  }
+  #clients:hover .sub-clients {
+    display: inline;
+  }
+
+  #settings:hover {
+    height: 10rem;
+    transition: height 400ms ease;
+  }
+  #settings:hover .sub-settings {
+    display: inline;
+  }
+}
+
+.dark {
+  --logo-bgcolor: #000000;
+  --logo-color: #ffffff;
+  --nav-bgcolor: #38383b;
+  --nav-color: #cfcfd4;
+  --nav-hover-color: #ded2e0;
+  --nav-hover-bgcolor: #1f1b2e;
+  --sub-nav-bgcolor: #5b5b5c;
+  --text-primary: #e8e7e9;
+  --text-secondary: #26252e;
+  --bg-primary: #0c0c1d;
+}
+
+.blue {
+  --logo-bgcolor: #080125;
+  --logo-color: #ffffff;
+  --nav-bgcolor: #20207c;
+  --nav-color: #ffffff;
+  --nav-hover-color: #ffffff;
+  --nav-hover-bgcolor: #120347;
+  --sub-nav-bgcolor: #e3e1ec;
+  --text-primary: #000000;
+  --text-secondary: #26252e;
+  --bg-primary: #abacec;
+}
+
+.red {
+  --logo-bgcolor: #fa0202;
+  --logo-color: #8a0d0d;
+  --nav-bgcolor: #c40000;
+  --nav-color: #f0b968;
+  --nav-hover-color: #e99210;
+  --nav-hover-bgcolor: #680a0a;
+  --sub-nav-bgcolor: #e3e1ec;
+  --text-primary: #000000;
+  --text-secondary: #26252e;
+  --bg-primary: #e0a04b;
+}
+
+.light {
+  --logo-bgcolor: #5555d6;
+  --logo-color: #ffffff;
+  --nav-bgcolor: #56556b;
+  --nav-color: #a1a1ee;
+  --nav-hover-color: #ffffff;
+  --nav-hover-bgcolor: #61509e;
+  --sub-nav-bgcolor: #9694a0;
+  --text-primary: #000000;
+  --text-secondary: #26252e;
+  --bg-primary: #ffffff;
+}
